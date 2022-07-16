@@ -1,0 +1,118 @@
+/* Neutral (grey) */
+
+/* Define Colors as colors */
+:root {
+  /* Neutral colors */
+  --grey-0: #ffffff;
+  --grey-50: #f3f3f3;
+  --grey-100: #e7e7e7;
+  --grey-200: #cfcfcf;
+  --grey-300: #b7b7b7;
+  --grey-400: #9f9f9f;
+  --grey-500: #6f6f6f;
+  --grey-600: #575757;
+  --grey-700: #3f3f3f;
+  --grey-800: #272727;
+  --grey-900: #0f0f0f;
+  --grey-950: #1f1f1f;
+  --grey-1000: #000000;
+
+  /* Accent Colors */
+  /* Green */
+  --green-0: #6ac86a;
+  --green-50: #5bc25b;
+  --green-100: #4cbd4c;
+  --green-200: #42b342;
+  --green-300: #3da43d;
+  --green-400: #379537;
+  --green-500: #2f7f2f;
+  --green-600: #2c772c;
+  --green-700: #276827;
+  --green-800: #215921;
+  --green-900: #1c4a1c;
+  --green-950: #163c16;
+  --green-1000: #112d11;
+  /* Red */
+  --red-0: #e06a6a;
+  --red-50: #d15b5b;
+  --red-100: #c84c4c;
+  --red-200: #bf3f3f;
+  --red-300: #b63b3b;
+  --red-400: #ad2f2f;
+  --red-500: #a42c2c;
+  --red-600: #9b2727;
+  --red-700: #912121;
+  --red-800: #8a1c1c;
+  --red-900: #811f1f;
+  --red-950: #7a1b1b;
+  --red-1000: #711f1f;
+  /* Blue */
+  --blue-0: #6a9ee0;
+  --blue-50: #5b9cd1;
+  --blue-100: #4c9ac2;
+  --blue-200: #3f9ab3;
+  --blue-300: #3b99ad;
+  --blue-400: #3799a7;
+  --blue-500: #2f99a0;
+  --blue-600: #2c9998;
+  --blue-700: #279992;
+  --blue-800: #219988;
+  --blue-900: #1c998a;
+  --blue-950: #16978a;
+  --blue-1000: #118b8b;
+
+  /* AgencyGA Colors */
+  /* Primary */
+  --orange-web-50: #ffcd70;
+  --orange-web-100: #ffc65c;
+  --orange-web-200: #ffbf47;
+  --orange-web-300: #ffb833;
+  --orange-web-400: #ffb01f;
+  --orange-web: #ffa400;
+  --orange-web-600: #f59f00;
+  --orange-web-700: #e09200;
+  --orange-web-800: #cc8500;
+  --orange-web-900: #b87700;
+
+  /* Define colors intentions */
+  --primary-color: var(--orange-web);
+}
+html {
+  font-size: 22px;
+}
+body {
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--primary-color);
+  color: --grey-1000;
+  padding: 1rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 0.75rem 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
